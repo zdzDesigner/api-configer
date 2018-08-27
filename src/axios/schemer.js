@@ -1,4 +1,4 @@
-import util from '../../util'
+import util from '../util'
 
 let {isType, isObject, isFunction, 
      CTS, deep, isNil} = util
