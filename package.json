@@ -1,0 +1,37 @@
+{
+  "name": "api-configer",
+  "version": "0.1.0-alpha.0",
+  "description": "api static conifg",
+  "files": [
+    "lib"
+  ],
+  "main": "null",
+  "scripts": {
+    "test": "null"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zdzDesigner/api-configer.git"
+  },
+  "keywords": [
+    "api",
+    "config",
+    "axios"
+  ],
+  "author": "zdzDesigner",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zdzDesigner/api-configer/issues"
+  },
+  "homepage": "https://github.com/zdzDesigner/api-configer#readme",
+  "devDependencies": {
+    "babel-core": "^6.0.0",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-stage-0": "^6.24.1",
+    "del": "^3.0.0",
+    "gulp": "^3.9.1",
+    "gulp-babel": "^7.0.1",
+    "gulp-concat": "^2.6.1"
+  }
+}
