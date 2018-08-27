@@ -156,7 +156,7 @@ var last2 = arr => {console.log(arr)}
 
 
 
-module.exports = {
+export default {
     Functor,
     Maybe
 }
