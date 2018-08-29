@@ -1,5 +1,11 @@
+var isPro;
+try{
+    isPro = APP_ENV == 'pro'
+}catch(err){
+    isPro = false
+}
 function logger(condition, format, a, b, c, d, e, f) {
-    if(APP_ENV == 'pro') return
+    if(isPro) return
     var args = [a, b, c, d, e, f]
     var argIndex = 0
     var msg = format.replace(/%s/g, ()=>args[argIndex++])
