@@ -1,22 +1,3 @@
-import Vue from 'vue'
-
-
-const merge = Vue.util.mergeOptions
-const urlTpl = function(){}
-
-
-
-/**
- * [mergeMulti description]
- * mergeMulti({},{name:'zdz'},{age:33})
- */
-function mergeMulti(data,...args){
-    data = data ||{}
-    return args.reduce(function(pending,item){
-        return merge(pending,item)
-    },data)
-}
-
 /**
  * [hasCnStr 是否存在中文字符串]
  * @param  {[String]} text  [这是一个测试字符串，just a test。]
@@ -46,9 +27,6 @@ function textTruncate (text, maxlen){
 
 
 export {
-    merge,
-    mergeMulti,
     hasCnStr,
-    textTruncate,
-    urlTpl
+    textTruncate
 }

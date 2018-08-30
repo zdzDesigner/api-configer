@@ -1,11 +1,11 @@
 {
   "name": "api-configer",
-  "version": "0.1.0-alpha.3",
+  "version": "0.1.0-alpha.4",
   "description": "api static conifg",
   "files": [
     "lib"
   ],
-  "main": "null",
+  "main": "axios/index.js",
   "scripts": {
     "develop": "gulp"
   },
@@ -24,6 +24,10 @@
     "url": "https://github.com/zdzDesigner/api-configer/issues"
   },
   "homepage": "https://github.com/zdzDesigner/api-configer#readme",
+  "peerDependencies": {
+    "axios":"0.18.0",
+    "lodash":"^4.17.10"
+  },
   "devDependencies": {
     "babel-core": "^6.0.0",
     "babel-plugin-transform-flow-strip-types": "^6.22.0",
