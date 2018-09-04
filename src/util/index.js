@@ -1,5 +1,6 @@
 import functor from './functor.js'
 import * as lang from './lang.js'
+import {isBoolean} from './lang.js'
 import * as base from './base.js'
 import flatobj from './flatobj.js'
 import * as intersection from './intersection.js'
@@ -24,5 +25,6 @@ var util = {
 export default util
 export {
     logger,
-    parseText
+    parseText,
+    isBoolean
 }

@@ -33,6 +33,7 @@ function CTS(constructor){
 
 export {
     isUndefined,
+    isBoolean,
     isType,
     isObject,
     isFunction,

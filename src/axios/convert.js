@@ -1,5 +1,5 @@
 import Axios from 'axios'
-import { parseText, logger } from '../util'
+import { parseText, logger, isBoolean } from '../util'
 import schemer from './schemer.js'
 
 
@@ -7,8 +7,8 @@ const axios = Axios.create()
 const CancelToken = Axios.CancelToken
 
 
-function convert(sub){
-
+function convert(sub, options){
+    options = options || {}
     let ROOT = sub.ROOT || ''
     delete sub.ROOT
 
@@ -26,8 +26,12 @@ function convert(sub){
         let rawUrl = item[method]
         // console.log(key,rawUrl)
         
-        !item.payload && (item.payload = true)
-        
+        // !item.payload && (item.payload = true)
+        item.payload = isBoolean(item.payload) 
+                        ? item.payload 
+                        :isBoolean(options.payload) 
+                            ? options.payload
+                            : true
         
         let type = item.payload ? 'json' : 'form'
         let abort = item.abort || false

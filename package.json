@@ -1,11 +1,11 @@
 {
   "name": "api-configer",
-  "version": "0.1.0-alpha.4",
+  "version": "0.1.0-alpha.5",
   "description": "api static conifg",
   "files": [
     "lib"
   ],
-  "main": "axios/index.js",
+  "main": "lib/axios/index.js",
   "scripts": {
     "develop": "gulp"
   },
