@@ -1,6 +1,6 @@
 {
   "name": "api-configer",
-  "version": "0.1.0-alpha.5",
+  "version": "0.1.0-alpha.6",
   "description": "api static conifg",
   "files": [
     "lib"

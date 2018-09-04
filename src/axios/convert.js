@@ -84,7 +84,9 @@ function convert(sub, options){
             if(~bodyRequest.indexOf(method)){
                 config = expandHeaders({config, contentType, apiname:key, baseURL:ROOT, schema, abort, binary, withCredentials, mock})
                 // console.log(data,type)
-                type == 'form' && (data = serialize(data))
+                if(data){
+                    type == 'form' && (data = serialize(data));    
+                }
                 pend = axios[method](url,data,config)
             }
 
